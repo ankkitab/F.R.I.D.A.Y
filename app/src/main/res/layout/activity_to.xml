@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/card_view"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="#81C784"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="4dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/activity_to"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.rishabh.friday.ToActivity">
+
+        <Button
+            android:id="@+id/NotesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:background="#f052b9"
+            android:onClick="NoteRedirect"
+            android:text="Notes"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/RemindersButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="#f052b9"
+            android:onClick="ReminderRedirect"
+            android:text="Reminders"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/NotesButton"
+            android:layout_alignLeft="@+id/NotesButton"
+            android:layout_alignStart="@+id/NotesButton" />
+
+        <Button
+            android:id="@+id/ChecklistButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:background="#f052b9"
+            android:onClick="ChecklistRedirect"
+            android:text="Checklist"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/RemindersButton"
+            android:layout_alignLeft="@+id/RemindersButton"
+            android:layout_alignStart="@+id/RemindersButton" />
+
+
+        <Button
+            android:id="@+id/Exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#f052b9"
+            android:onClick="Exit"
+            android:text="Exit"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/ChecklistButton"
+            android:layout_alignLeft="@+id/ChecklistButton"
+            android:layout_alignStart="@+id/ChecklistButton" />
+
+        <!-- mic add -->
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left|bottom"
+            android:backgroundTint="#f052b9"
+            android:shape="ring"
+            android:src="@drawable/mic3"
+            tools:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
